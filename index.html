@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Textul care va aparea in bara de sus a browserului-->
     <title>BarberShop</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <header>
+    <header class="global-header">
       <!--
                 Imagine cu logo, pentru scalabilitate (afisare corecta mobil/desktop) se recomanda sa fie
                 format scalabil (svg), iar pentru a eficientiza imaginea se recomanda https://squoosh.app/,
@@ -18,14 +19,14 @@
       <a href="index.html"
         ><img src="./images/logo.svg" alt="logo-barbershop"
       /></a>
-      <div><span>sdasd</span></div>
+
       <!-- Sectiunea nav, trebuie sa contina doar link-urile pentru navigatie -->
-      <nav>
+      <nav class="main-nav">
         <!-- Scurtatura pentru scriere rapida in editor: ul>li*4>a -->
         <!-- De regula, pentru ca nu este importanta ordinea, la meniu se foloseste ul (Unordered List) -->
         <ul>
           <li>
-            <a href="">About</a>
+            <a href="" class="active">About</a>
           </li>
           <li>
             <a>Services and Prices</a>
