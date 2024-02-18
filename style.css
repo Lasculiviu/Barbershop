@@ -73,8 +73,3 @@ a {
   line-height: 16px;
   padding: 8px;
 }
-
-.logo::after {
-  content: "STUDIO";
-  color: black;
-}
