@@ -24,8 +24,8 @@ h6 {
   background-color: rgb(128, 128, 128);
 }
 
-.global-header .main-nav a,
-.global-header .main-nav a:visited {
+.global-header .main-navigation a,
+.global-header .main-navigation a:visited {
   color: var(--link-color);
   font-weight: 600;
 }
@@ -34,7 +34,7 @@ ul {
   list-style-type: none;
 }
 
-.global-header .main-nav a:hover {
+.global-header .main-navigation a:hover {
   color: var(--link-color_hover);
   cursor: pointer;
 }
