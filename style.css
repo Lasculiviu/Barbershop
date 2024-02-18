@@ -1,20 +1,80 @@
 :root {
-  --link-color: #fff;
+  --link-color: #ffffff;
+  --social-link-color: #000000;
+  --link-color_hover: #ff6c00;
+  --heading-font-family: "Raleway", sans-serif;
+  --text-font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font-family);
+  font-weight: 700;
+}
+
+* {
+  font-family: var(--text-font-family);
 }
 
 .global-header {
-  background-color: #4200f8;
+  background-color: rgb(128, 128, 128);
 }
 
 .global-header .main-nav a,
 .global-header .main-nav a:visited {
   color: var(--link-color);
+  font-weight: 600;
 }
 
-.global-header .main-nav li {
+ul {
   list-style-type: none;
 }
 
-.global-header .main-nav a.active {
-  color: red;
+.global-header .main-nav a:hover {
+  color: var(--link-color_hover);
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.social-section a,
+.social-section a:visited {
+  color: var(--social-link-color);
+  font-weight: 600;
+}
+
+.global-header .contact,
+.global-header .contact:visited {
+  color: var(--link-color);
+}
+
+.hero-section .hero-title {
+  color: var(--link-color);
+}
+
+.hero-section {
+  background-color: gray;
+}
+
+.button-service {
+  background-color: transparent;
+  text-transform: uppercase;
+  border-color: var(--link-color_hover);
+  border-radius: 15px;
+  border-width: 1px;
+  color: var(--link-color);
+  font-size: 12px;
+  line-height: 16px;
+  padding: 8px;
+}
+
+.logo::after {
+  content: "STUDIO";
+  color: black;
 }
