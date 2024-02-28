@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./style.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body>
     <!-- Hero Section -->
@@ -261,6 +262,48 @@
               <img src="./images/barber1.png" alt="John_Smith" /><br />
               <span>John Smith<br /></span>
               <em>Extreme Barber</em>
+              <div class="icons-list">
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  class="icon"
+                  aria-label="instagram-link"
+                >
+                  <svg>
+                    <use href="./icons/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+                <a
+                  href="https://www.twitter.com/"
+                  target="_blank"
+                  class="icon"
+                  aria-label="twitter-link"
+                >
+                  <svg>
+                    <use href="./icons/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  class="icon"
+                  aria-label="facebook-link"
+                >
+                  <svg>
+                    <use href="./icons/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+                <a
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  class="icon"
+                  aria-label="linkedin-link"
+                >
+                  <svg>
+                    <use href="./icons/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </div>
             </li>
 
             <li>
@@ -318,7 +361,8 @@
             <h2>Contacts</h2>
             <address class="contacts-address">
               <span class="contact-address-item">
-                <img src="./images/map-pin.svg" /> Main Street, 7A Kyiv, 08132
+                <img src="./images/map-pin.svg" />
+                <i data-feather="facebook"></i> Main Street, 7A Kyiv, 08132
               </span>
               <a class="contact-address-item link" href="tel:+380441111111">
                 <img src="./images/phone.svg" />+38 044 111 11 11
@@ -370,5 +414,9 @@
         </ul>
       </div>
     </footer>
+
+    <script>
+      feather.replace();
+    </script>
   </body>
 </html>
