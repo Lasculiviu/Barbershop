@@ -530,3 +530,57 @@ a.social-link:focus {
 .icons-list .icon:focus {
   color: var(--icons-color);
 }
+
+.book-a-service-btn {
+  background-color: transparent;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  color: #fff;
+  margin-left: 40px;
+  padding: 12px 25px;
+  outline: none;
+}
+
+.book-a-service-btn:focus,
+.book-a-service-btn:hover {
+  cursor: pointer;
+  background-color: #ff6c00;
+}
+
+.is-hidden {
+  visibility: hidden;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  padding: 16px;
+  background-color: #fff;
+  width: 50%;
+  height: 500px;
+  position: relative;
+}
+
+.close-btn {
+  background-color: red;
+  border-radius: 50%;
+  color: #fff;
+  outline: none;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  border-color: red;
+}
+
+.color-black {
+  color: #000;
+}

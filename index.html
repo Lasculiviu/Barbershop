@@ -59,14 +59,19 @@
               </ul>
               <div>
                 <a href="tel:+380441111111">+38 044 111 11 11</a>
-                <button class="button global-header-book-btn">
+                <button class="button book-a-service-btn" data-modal-open>
                   BOOK A SERVICE
                 </button>
               </div>
             </nav>
           </div>
         </header>
-
+        <div class="modal is-hidden" data-modal>
+          <div class="modal-content">
+            <button class="close-btn" data-modal-close>&times;</button>
+            Continut modal
+          </div>
+        </div>
         <section class="section global-header-content">
           <div class="section-description">
             <div class="heading-with-dash">
@@ -120,7 +125,12 @@
                   ready to improve everyone who comes to us!
                 </p>
               </div>
-              <button class="button">Book a service</button>
+              <button
+                class="button book-a-service-btn color-black"
+                data-modal-open
+              >
+                Book a service
+              </button>
             </div>
           </div>
         </div>
@@ -195,7 +205,9 @@
             </ul>
           </div>
           <div class="centered-content">
-            <button class="button">Book a service</button>
+            <button class="button book-a-service-btn" data-modal-open>
+              Book a service
+            </button>
           </div>
         </div>
       </section>
@@ -418,5 +430,6 @@
     <script>
       feather.replace();
     </script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
