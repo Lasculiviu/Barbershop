@@ -584,3 +584,26 @@ a.social-link:focus {
 .color-black {
   color: #000;
 }
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  background-color: red;
+  opacity: 0.5;
+  transform: translateY(101%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.img-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-overlay:hover .overlay {
+  transform: translateY(0px);
+}
