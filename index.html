@@ -59,14 +59,19 @@
               </ul>
               <div>
                 <a href="tel:+380441111111">+38 044 111 11 11</a>
-                <button class="button global-header-book-btn">
+                <button class="button book-a-service-btn" data-modal-open>
                   BOOK A SERVICE
                 </button>
               </div>
             </nav>
           </div>
         </header>
-
+        <div class="modal is-hidden" data-modal>
+          <div class="modal-content">
+            <button class="close-btn" data-modal-close>&times;</button>
+            Continut modal
+          </div>
+        </div>
         <section class="section global-header-content">
           <div class="section-description">
             <div class="heading-with-dash">
@@ -120,7 +125,12 @@
                   ready to improve everyone who comes to us!
                 </p>
               </div>
-              <button class="button">Book a service</button>
+              <button
+                class="button book-a-service-btn color-black"
+                data-modal-open
+              >
+                Book a service
+              </button>
             </div>
           </div>
         </div>
@@ -195,7 +205,9 @@
             </ul>
           </div>
           <div class="centered-content">
-            <button class="button">Book a service</button>
+            <button class="button book-a-service-btn" data-modal-open>
+              Book a service
+            </button>
           </div>
         </div>
       </section>
@@ -330,7 +342,14 @@
           </div>
           <ul class="motto-cards">
             <li>
-              <img src="./images/motto_img1.png" alt="Frizer_tunde_parul" />
+              <div class="img-overlay">
+                <img src="./images/motto_img1.png" alt="Frizer_tunde_parul" />
+                <div class="overlay">
+                  <p class="overlay-text">Text</p>
+                </div>
+              </div>
+              <h3>Heading 3</h3>
+              <p>Paragraph</p>
             </li>
             <li>
               <img src="./images/motto_img2.png" alt="Frizer_pregatind_barba" />
@@ -362,7 +381,7 @@
             <address class="contacts-address">
               <span class="contact-address-item">
                 <img src="./images/map-pin.svg" />
-                <i data-feather="facebook"></i> Main Street, 7A Kyiv, 08132
+                Main Street, 7A Kyiv, 08132
               </span>
               <a class="contact-address-item link" href="tel:+380441111111">
                 <img src="./images/phone.svg" />+38 044 111 11 11
@@ -418,5 +437,6 @@
     <script>
       feather.replace();
     </script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
